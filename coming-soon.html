@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Something Exciting Is Coming — TalentForge</title>
+  <meta name="description" content="TalentForge is building something new. Join the early access list and be the first to know when we launch." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+</head>
+<body>
+
+  <main id="main-content">
+    <div class="coming-soon-page">
+      <div class="coming-soon-bg" aria-hidden="true"></div>
+      <div aria-hidden="true" style="position:absolute;inset:0;overflow:hidden;pointer-events:none">
+        <div style="position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.07) 0%,transparent 70%);inset-block-start:-150px;inset-inline-end:-150px"></div>
+        <div style="position:absolute;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,0.05) 0%,transparent 70%);inset-block-end:-100px;inset-inline-start:-100px"></div>
+      </div>
+
+      <div class="coming-soon-content">
+        <a href="index.html" class="nav-logo" aria-label="TalentForge Home" style="justify-content:center;margin-block-end:var(--space-10)">
+          <div class="nav-logo-icon" aria-hidden="true" style="background:rgba(201,168,76,0.15);color:var(--color-secondary)"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <span class="nav-logo-text" style="color:#F7F5F0">Talent<span>Forge</span></span>
+        </a>
+
+        <p style="font-family:var(--font-heading);font-size:1rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(201,168,76,0.8);margin-block-end:var(--space-4)">Launching Soon</p>
+
+        <h1 style="font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:540;color:#F7F5F0;line-height:1.1;margin-block-end:var(--space-6)">
+          Something<br /><em style="color:var(--color-secondary);font-style:italic">Exceptional</em><br />Is Coming
+        </h1>
+
+        <p style="font-size:1.1rem;color:rgba(232,238,246,0.6);max-width:480px;margin:0 auto var(--space-10);line-height:1.65">We're building the future of talent acquisition. TalentForge Academy — a platform for hiring capability building — is on the way. Be first in line.</p>
+
+        <!-- Countdown -->
+        <div class="countdown-grid" id="countdown" aria-live="polite" aria-label="Countdown to launch">
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-days">--</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-sep" aria-hidden="true">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-hours">--</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-sep" aria-hidden="true">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-mins">--</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-sep" aria-hidden="true">:</div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-secs">--</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+
+        <!-- Early Access Form -->
+        <form class="newsletter-form" id="early-access-form" style="display:flex;gap:var(--space-3);max-width:440px;margin:var(--space-10) auto 0;flex-wrap:wrap" aria-label="Early access signup">
+          <input type="email" class="form-input" placeholder="Enter your email" aria-label="Email for early access" id="cs-email" required style="flex:1;min-width:200px;background:rgba(255,255,255,0.06);border-color:rgba(201,168,76,0.3);color:#F7F5F0" />
+          <button type="submit" class="btn btn-primary btn-lg" id="cs-notify-btn">Get Early Access</button>
+        </form>
+        <p style="color:rgba(232,238,246,0.35);font-size:var(--size-caption);margin-block-start:var(--space-3)">No spam. Unsubscribe anytime. We'll only email you once.</p>
+
+        <div class="success-message" id="cs-success" role="alert" style="margin-block-start:var(--space-4)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline;margin-inline-end:6px"><polyline points="20 6 9 17 4 12"/></svg>
+          You're on the list! We'll email you as soon as we launch.
+        </div>
+
+        <!-- Social proof -->
+        <div style="display:flex;align-items:center;gap:var(--space-3);margin-block-start:var(--space-8);justify-content:center;flex-wrap:wrap">
+          <div style="display:flex">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&auto=format&fit=crop&q=70" alt="" style="width:28px;height:28px;border-radius:50%;border:2px solid #0F1E38;margin-inline-end:-8px;object-fit:cover" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=80&auto=format&fit=crop&q=70" alt="" style="width:28px;height:28px;border-radius:50%;border:2px solid #0F1E38;margin-inline-end:-8px;object-fit:cover" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=80&auto=format&fit=crop&q=70" alt="" style="width:28px;height:28px;border-radius:50%;border:2px solid #0F1E38;object-fit:cover" loading="lazy" />
+          </div>
+          <p style="font-size:var(--size-caption);color:rgba(232,238,246,0.5)"><strong style="color:rgba(232,238,246,0.8)">2,400+</strong> people already signed up for early access</p>
+        </div>
+
+        <a href="index.html" style="display:inline-block;margin-block-start:var(--space-8);font-size:var(--size-label);color:rgba(232,238,246,0.4);text-decoration:none;border-bottom:1px solid rgba(232,238,246,0.15);padding-block-end:2px" id="back-to-site-btn">← Back to Main Site</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    // Countdown timer — target date: 90 days from now
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 90);
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = targetDate - now;
+      if (diff <= 0) return;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+      const pad = n => String(n).padStart(2, '0');
+      const dEl = document.getElementById('cd-days');
+      const hEl = document.getElementById('cd-hours');
+      const mEl = document.getElementById('cd-mins');
+      const sEl = document.getElementById('cd-secs');
+      if (dEl) dEl.textContent = pad(days);
+      if (hEl) hEl.textContent = pad(hours);
+      if (mEl) mEl.textContent = pad(mins);
+      if (sEl) sEl.textContent = pad(secs);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Early access form
+    const form = document.getElementById('early-access-form');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const success = document.getElementById('cs-success');
+        if (success) success.classList.add('visible');
+      });
+    }
+  </script>
+</body>
+</html>

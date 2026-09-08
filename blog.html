@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog & Insights — TalentForge | Recruitment Intelligence</title>
+  <meta name="description" content="Expert hiring insights, talent market trends, career advice, and recruitment strategy from TalentForge's team of specialist consultants." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="TalentForge Home"><div class="nav-logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text">Talent<span>Forge</span></span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <div class="nav-dropdown"><a href="services.html" class="nav-link">Services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-inline-start:4px;vertical-align:middle"><polyline points="6 9 12 15 18 9"/></svg></a><div class="nav-dropdown-menu"><a href="services.html#executive" class="nav-dropdown-item">Executive Search</a><a href="services.html#staffing" class="nav-dropdown-item">Staffing Solutions</a><a href="services.html#hr" class="nav-dropdown-item">HR Consulting</a></div></div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-icon-btn theme-toggle-desktop" data-theme-toggle aria-label="Toggle dark mode"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <button class="nav-icon-btn" data-rtl-toggle aria-label="Toggle RTL"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4"/><path d="M3 12h14"/><path d="M17 8l4 4-4 4"/></svg></button>
+        <a href="login.html" class="btn btn-primary btn-sm" id="nav-login-btn">Login</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+    </div>
+  </header>
+  <div class="drawer-overlay" aria-hidden="true"></div>
+  <nav class="drawer" aria-label="Mobile navigation">
+    <div class="drawer-header"><a href="index.html" class="nav-logo"><div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text">Talent<span>Forge</span></span></a><button class="drawer-close" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <div class="drawer-nav">
+      <a href="index.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Home</a>
+      <a href="home2.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Home 2</a>
+      <a href="services.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>Services</a>
+      <a href="about.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>About</a>
+      <a href="blog.html" class="drawer-link active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Blog</a>
+      <a href="contact.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>Contact</a>
+      <a href="dashboard.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</a>
+      <a href="login.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>Login</a>
+    </div>
+    <div class="drawer-footer">
+      <button class="nav-icon-btn" data-theme-toggle aria-label="Toggle dark mode" style="width:auto;padding:0 var(--space-3);gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>Dark Mode</button>
+      <button class="nav-icon-btn" data-rtl-toggle aria-label="RTL" style="width:auto;padding:0 var(--space-3);gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4"/><path d="M3 12h14"/><path d="M17 8l4 4-4 4"/></svg>RTL</button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- ══ SECTION 1: HERO ════════════════════════════ -->
+    <section class="page-hero section-full" id="blog-hero" aria-label="Blog hero" style="min-height:55vh">
+      <div class="page-hero-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Blog</span></nav>
+          <h1 class="page-hero-title reveal">Talent Intelligence<br /><em style="color:var(--color-secondary);font-style:italic">& Hiring Insights</em></h1>
+          <p class="page-hero-subtitle reveal">Strategic hiring wisdom from practitioners who've placed 15,000+ professionals across 30 countries.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 2: FEATURED POST ══════════════════════ -->
+    <section class="section section-full" id="featured-post" aria-labelledby="featured-heading" style="background:var(--color-bg)">
+      <div class="container">
+        <div class="section-label reveal" style="justify-content:flex-start;margin-block-end:var(--space-6)">Featured Article</div>
+        <div class="blog-featured reveal">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=900&auto=format&fit=crop&q=70"
+              alt="The future of work — remote hiring and global talent"
+              class="blog-featured-img"
+              loading="eager"
+            />
+          </div>
+          <div class="blog-featured-content">
+            <p class="section-label" style="justify-content:flex-start">Strategy</p>
+            <h2 class="blog-featured-title" id="featured-heading">Why the War for Talent Is Over — And Who Won</h2>
+            <div class="blog-meta" style="margin-block-end:var(--space-4)">
+              <span>Alexandra Reid</span>
+              <span>·</span>
+              <span>August 28, 2026</span>
+              <span>·</span>
+              <span>8 min read</span>
+            </div>
+            <p class="card-text" style="text-align:start;margin-block-end:var(--space-6)">The "war for talent" narrative dominated boardrooms for two decades. But the landscape has shifted dramatically. Companies that embraced employer branding, flexible work models, and purpose-driven cultures came out ahead — while those chasing salary escalation found themselves in a losing arms race. Here's what the data shows.</p>
+            <a href="blog-single.html" class="btn btn-primary btn-lg" id="featured-read-btn">
+              Read Full Article
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 3: FILTER + GRID ══════════════════════ -->
+    <section class="section section-full" id="articles" aria-labelledby="articles-heading" style="background:var(--color-surface)">
+      <div class="container">
+        <div class="section-center reveal">
+          <p class="section-label">Latest Articles</p>
+          <h2 class="section-title" id="articles-heading">Explore Our Insights</h2>
+        </div>
+
+        <div class="jobs-filter reveal">
+          <button class="filter-btn active" id="blog-filter-all">All Topics</button>
+          <button class="filter-btn" id="blog-filter-hiring">Hiring Strategy</button>
+          <button class="filter-btn" id="blog-filter-career">Career Advice</button>
+          <button class="filter-btn" id="blog-filter-market">Market Trends</button>
+          <button class="filter-btn" id="blog-filter-dei">DEI</button>
+          <button class="filter-btn" id="blog-filter-leadership">Leadership</button>
+        </div>
+
+        <div class="blog-grid stagger-parent" style="margin-block-start:var(--space-8)">
+          <article class="blog-card stagger-child" aria-labelledby="blog-1-title">
+            <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&auto=format&fit=crop&q=70" alt="AI in recruitment" class="blog-card-img" loading="lazy" /></div>
+            <div class="blog-card-body">
+              <span class="tag">Market Trends</span>
+              <h3 class="blog-card-title" id="blog-1-title">How AI Is Changing the Executive Search Landscape in 2026</h3>
+              <p class="blog-card-excerpt">AI won't replace recruiters — but recruiters using AI will replace those who don't. We break down what's changing and what isn't.</p>
+              <div class="blog-meta" style="margin-block-start:auto">
+                <span>Priya Sharma</span>
+                <span>·</span>
+                <span>5 min read</span>
+              </div>
+              <a href="blog-single.html" class="btn btn-ghost" style="padding-inline:0;margin-block-start:var(--space-2)" id="blog-1-read">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card stagger-child" aria-labelledby="blog-2-title">
+            <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1573497019236-17f8177b81e8?w=600&auto=format&fit=crop&q=70" alt="Salary negotiation" class="blog-card-img" loading="lazy" /></div>
+            <div class="blog-card-body">
+              <span class="tag">Career Advice</span>
+              <h3 class="blog-card-title" id="blog-2-title">The Salary Negotiation Playbook: How to Get 20% More (With Data)</h3>
+              <p class="blog-card-excerpt">Most professionals leave significant money on the table during salary negotiations. Our expert guide covers the psychology and tactics that work.</p>
+              <div class="blog-meta" style="margin-block-start:auto">
+                <span>James Okafor</span>
+                <span>·</span>
+                <span>7 min read</span>
+              </div>
+              <a href="blog-single.html" class="btn btn-ghost" style="padding-inline:0;margin-block-start:var(--space-2)" id="blog-2-read">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card stagger-child" aria-labelledby="blog-3-title">
+            <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&auto=format&fit=crop&q=70" alt="DEI hiring practices" class="blog-card-img" loading="lazy" /></div>
+            <div class="blog-card-body">
+              <span class="tag">DEI</span>
+              <h3 class="blog-card-title" id="blog-3-title">Beyond Diversity Washing: Building an Inclusive Hiring Process That Actually Works</h3>
+              <p class="blog-card-excerpt">True inclusion requires systemic change, not performative gestures. Here's a practical framework we use with our best-in-class clients.</p>
+              <div class="blog-meta" style="margin-block-start:auto">
+                <span>Marcus Chen</span>
+                <span>·</span>
+                <span>9 min read</span>
+              </div>
+              <a href="blog-single.html" class="btn btn-ghost" style="padding-inline:0;margin-block-start:var(--space-2)" id="blog-3-read">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card stagger-child" aria-labelledby="blog-4-title">
+            <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&auto=format&fit=crop&q=70" alt="Remote hiring" class="blog-card-img" loading="lazy" /></div>
+            <div class="blog-card-body">
+              <span class="tag">Hiring Strategy</span>
+              <h3 class="blog-card-title" id="blog-4-title">Interviewing in the Age of Remote Work: What's Changed, What Hasn't</h3>
+              <p class="blog-card-excerpt">Virtual interviews are the norm, but most companies haven't adapted their assessment frameworks. Here's what the research says works.</p>
+              <div class="blog-meta" style="margin-block-start:auto">
+                <span>Alexandra Reid</span>
+                <span>·</span>
+                <span>6 min read</span>
+              </div>
+              <a href="blog-single.html" class="btn btn-ghost" style="padding-inline:0;margin-block-start:var(--space-2)" id="blog-4-read">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card stagger-child" aria-labelledby="blog-5-title">
+            <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=70" alt="Leadership development" class="blog-card-img" loading="lazy" /></div>
+            <div class="blog-card-body">
+              <span class="tag">Leadership</span>
+              <h3 class="blog-card-title" id="blog-5-title">The First 90 Days: How Exceptional Leaders Earn Authority Quickly</h3>
+              <p class="blog-card-excerpt">Data from 2,000 executive placements reveals the five behaviors that separate transformational leaders from those who struggle to gain traction.</p>
+              <div class="blog-meta" style="margin-block-start:auto">
+                <span>James Okafor</span>
+                <span>·</span>
+                <span>10 min read</span>
+              </div>
+              <a href="blog-single.html" class="btn btn-ghost" style="padding-inline:0;margin-block-start:var(--space-2)" id="blog-5-read">Read Article →</a>
+            </div>
+          </article>
+
+          <article class="blog-card stagger-child" aria-labelledby="blog-6-title">
+            <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&auto=format&fit=crop&q=70" alt="Talent market report" class="blog-card-img" loading="lazy" /></div>
+            <div class="blog-card-body">
+              <span class="tag">Market Trends</span>
+              <h3 class="blog-card-title" id="blog-6-title">H2 2026 Talent Market Report: Sectors Hiring, Sectors Pausing</h3>
+              <p class="blog-card-excerpt">Our bi-annual snapshot of hiring activity across 12 industries. Technology and healthcare continue to lead while some financial sectors recalibrate.</p>
+              <div class="blog-meta" style="margin-block-start:auto">
+                <span>Research Team</span>
+                <span>·</span>
+                <span>12 min read</span>
+              </div>
+              <a href="blog-single.html" class="btn btn-ghost" style="padding-inline:0;margin-block-start:var(--space-2)" id="blog-6-read">Read Article →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-8 reveal">
+          <a href="#" class="btn btn-outline btn-lg" id="load-more-btn">Load More Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 4: NEWSLETTER ════════════════════════ -->
+    <section class="section section-full cta-section" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container section-center reveal">
+        <p class="section-label" style="color:rgba(201,168,76,0.8);justify-content:center">Weekly Intelligence</p>
+        <h2 class="section-title" id="newsletter-heading">The TalentForge Dispatch</h2>
+        <p class="section-subtitle">Every Monday: one actionable hiring insight, one market data point, and one career tip. No fluff. Trusted by 12,000+ subscribers.</p>
+        <form class="newsletter-form" style="display:flex;gap:var(--space-3);max-width:480px;margin:var(--space-8) auto 0;justify-content:center;flex-wrap:wrap" aria-label="Newsletter signup">
+          <input type="email" class="form-input" placeholder="Enter your email address" aria-label="Email for newsletter" id="blog-newsletter-email" required style="flex:1;min-width:200px;background:rgba(255,255,255,0.06);border-color:rgba(201,168,76,0.3);color:#F7F5F0" />
+          <button type="submit" class="btn btn-primary btn-lg" id="blog-subscribe-btn">Subscribe Free</button>
+        </form>
+        <p style="color:rgba(232,238,246,0.4);font-size:var(--size-caption);margin-block-start:var(--space-3)">Unsubscribe at any time. No spam, ever.</p>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 5: CATEGORIES ════════════════════════ -->
+    <section class="section" id="categories" aria-labelledby="categories-heading" style="background:var(--color-bg)">
+      <div class="container">
+        <div class="section-center reveal mb-8">
+          <p class="section-label">Browse by Topic</p>
+          <h2 class="section-title" id="categories-heading">Explore Categories</h2>
+        </div>
+        <div class="grid grid-4 stagger-parent">
+          <a href="#" class="card stagger-child" style="text-decoration:none" aria-label="Hiring Strategy articles">
+            <div class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <h3 class="card-title" style="font-size:1.1rem">Hiring Strategy</h3>
+            <p class="card-text">24 articles</p>
+          </a>
+          <a href="#" class="card stagger-child" style="text-decoration:none" aria-label="Career Advice articles">
+            <div class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <h3 class="card-title" style="font-size:1.1rem">Career Advice</h3>
+            <p class="card-text">31 articles</p>
+          </a>
+          <a href="#" class="card stagger-child" style="text-decoration:none" aria-label="Market Trends articles">
+            <div class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+            <h3 class="card-title" style="font-size:1.1rem">Market Trends</h3>
+            <p class="card-text">18 articles</p>
+          </a>
+          <a href="#" class="card stagger-child" style="text-decoration:none" aria-label="Leadership articles">
+            <div class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <h3 class="card-title" style="font-size:1.1rem">Leadership</h3>
+            <p class="card-text">22 articles</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text" style="color:#F7F5F0">Talent<span>Forge</span></span></a><p>Your hiring success is our only mission.</p></div>
+        <div class="footer-col"><p class="footer-col-title">Services</p><ul class="footer-links"><li><a href="services.html" class="footer-link">Executive Search</a></li><li><a href="services.html" class="footer-link">Staffing</a></li><li><a href="services.html" class="footer-link">HR Consulting</a></li></ul></div>
+        <div class="footer-col"><p class="footer-col-title">Company</p><ul class="footer-links"><li><a href="about.html" class="footer-link">About Us</a></li><li><a href="blog.html" class="footer-link">Blog</a></li><li><a href="contact.html" class="footer-link">Contact</a></li></ul></div>
+        <div class="footer-col"><p class="footer-col-title">Contact</p><ul class="footer-links"><li><a href="mailto:hello@talentforge.com" class="footer-link">hello@talentforge.com</a></li><li><a href="tel:+18005527771" class="footer-link">+1 800 552 7771</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p class="footer-copy">© 2026 TalentForge. All rights reserved.</p><nav class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></nav></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* ============================================================
+   TalentForge — RTL Overrides
+   Applied when dir="rtl" is set on <html>
+   ============================================================ */
+
+/* ── Navbar RTL ─────────────────────────────────────────── */
+[dir="rtl"] .nav-logo-text { letter-spacing: 0; }
+
+[dir="rtl"] .nav-dropdown-menu {
+  inset-inline-start: auto;
+  inset-inline-end: 50%;
+  transform: translateX(50%);
+}
+
+[dir="rtl"] .nav-dropdown:hover .nav-dropdown-menu {
+  transform: translateX(50%) translateY(0);
+}
+
+/* ── Drawer RTL (slide from left) ──────────────────────── */
+[dir="rtl"] .drawer {
+  inset-inline-end: auto;
+  inset-inline-start: 0;
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .drawer.open {
+  transform: translateX(0);
+}
+
+/* ── Section Label RTL ─────────────────────────────────── */
+[dir="rtl"] .section-label::before { display: none; }
+[dir="rtl"] .section-label::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 1px;
+  background: var(--color-secondary);
+}
+
+/* ── Hero RTL ───────────────────────────────────────────── */
+[dir="rtl"] .hero-label::before { display: none; }
+[dir="rtl"] .hero-label::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--color-secondary);
+}
+
+[dir="rtl"] .hero-content { text-align: end; }
+[dir="rtl"] .hero-subtitle { text-align: end; }
+[dir="rtl"] .hero-actions { flex-direction: row-reverse; }
+[dir="rtl"] .hero-stats { direction: rtl; }
+
+/* ── About Split RTL ────────────────────────────────────── */
+[dir="rtl"] .about-split { direction: rtl; }
+[dir="rtl"] .about-content h2 { text-align: end; }
+[dir="rtl"] .about-content p { text-align: end; }
+[dir="rtl"] .about-content .section-label { justify-content: flex-end; }
+
+/* ── Blog Featured RTL ─────────────────────────────────── */
+[dir="rtl"] .blog-featured-content .section-label { justify-content: flex-end; }
+[dir="rtl"] .blog-featured-title { text-align: end; }
+
+/* ── Contact RTL ────────────────────────────────────────── */
+[dir="rtl"] .contact-info-card { flex-direction: row-reverse; text-align: end; }
+[dir="rtl"] .contact-info-label { text-align: end; }
+
+/* ── Job Card RTL ───────────────────────────────────────── */
+[dir="rtl"] .job-card { text-align: end; }
+[dir="rtl"] .job-meta { flex-direction: row-reverse; }
+
+/* ── Cards RTL ──────────────────────────────────────────── */
+[dir="rtl"] .card { direction: rtl; }
+
+/* ── Drawer Link active border ──────────────────────────── */
+[dir="rtl"] .drawer-link.active {
+  border-inline-start: none;
+  border-inline-end: 2px solid var(--color-secondary);
+}
+
+/* ── Sidebar RTL ────────────────────────────────────────── */
+[dir="rtl"] .sidebar {
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+  transform: translateX(100%);
+}
+
+[dir="rtl"] .sidebar.open {
+  transform: translateX(0);
+}
+
+[dir="rtl"] .dashboard-main {
+  margin-inline-start: 0;
+  margin-inline-end: 260px;
+}
+
+[dir="rtl"] .sidebar-link.active {
+  border-inline-start: none;
+  border-inline-end: 2px solid var(--color-secondary);
+}
+
+/* ── Footer RTL ─────────────────────────────────────────── */
+[dir="rtl"] .footer-link:hover {
+  padding-inline-start: 0;
+  padding-inline-end: var(--space-2);
+}
+
+[dir="rtl"] .footer-brand p { text-align: end; }
+
+/* ── Pricing Features RTL ───────────────────────────────── */
+[dir="rtl"] .pricing-feature { flex-direction: row-reverse; }
+[dir="rtl"] .pricing-features { text-align: end; }
+
+/* ── Service Card border ────────────────────────────────── */
+[dir="rtl"] .service-card::before {
+  transform-origin: inline-end;
+}
+
+/* ── Timeline RTL ───────────────────────────────────────── */
+[dir="rtl"] .timeline::before {
+  inset-inline-start: auto;
+  inset-inline-end: 50%;
+}
+
+/* ── Hero2 RTL ──────────────────────────────────────────── */
+[dir="rtl"] .hero2-left { text-align: end; }
+[dir="rtl"] .hero2-subtitle { text-align: end; }
+[dir="rtl"] .hero2-left .section-label { justify-content: flex-end; }
+
+/* ── Table RTL ──────────────────────────────────────────── */
+[dir="rtl"] .data-table th,
+[dir="rtl"] .data-table td {
+  text-align: end;
+}
+
+/* ── Breadcrumb RTL ─────────────────────────────────────── */
+[dir="rtl"] .breadcrumb { flex-direction: row-reverse; }
+
+/* ── Auth RTL ───────────────────────────────────────────── */
+[dir="rtl"] .checkbox-group { flex-direction: row-reverse; }
+[dir="rtl"] .form-group { align-items: flex-end; }
+
+/* ── FAQ RTL ─────────────────────────────────────────────── */
+[dir="rtl"] .faq-question { flex-direction: row-reverse; text-align: end; }
+[dir="rtl"] .faq-answer-inner { text-align: end; }
+
+/* ── Process Steps RTL ─────────────────────────────────── */
+[dir="rtl"] .process-steps::before {
+  background: linear-gradient(270deg, var(--color-secondary), var(--color-border-gold), transparent);
+}
+
+/* ── Blog Card RTL ──────────────────────────────────────── */
+[dir="rtl"] .blog-card-body { text-align: end; }
+
+/* ── Team Social RTL ───────────────────────────────────── */
+[dir="rtl"] .team-social { flex-direction: row-reverse; }
+
+/* ── Contact Form RTL ──────────────────────────────────── */
+[dir="rtl"] .contact-form { direction: rtl; }
+[dir="rtl"] .form-label { text-align: end; }
+
+/* ── Responsive RTL Centering Overrides ─────────────────── */
+@media (max-width: 1024px) {
+  [dir="rtl"] .hero-content,
+  [dir="rtl"] .hero-subtitle,
+  [dir="rtl"] .hero2-left,
+  [dir="rtl"] .hero2-subtitle,
+  [dir="rtl"] .about-content h2,
+  [dir="rtl"] .about-content p,
+  [dir="rtl"] .blog-featured-title,
+  [dir="rtl"] .footer-brand p,
+  [dir="rtl"] .job-card,
+  [dir="rtl"] .contact-info-card {
+    text-align: center;
+  }
+
+  [dir="rtl"] .section-label,
+  [dir="rtl"] .about-content .section-label,
+  [dir="rtl"] .blog-featured-content .section-label,
+  [dir="rtl"] .hero2-left .section-label {
+    justify-content: center;
+  }
+
+  [dir="rtl"] .hero-actions,
+  [dir="rtl"] .hero2-actions,
+  [dir="rtl"] .job-meta {
+    justify-content: center;
+  }
+}

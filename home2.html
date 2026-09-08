@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TalentForge — Home 2 | Alternative Experience</title>
+  <meta name="description" content="Discover TalentForge's recruitment ecosystem. How it works, industries we serve, and success stories from 15,000+ placements." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR (identical across all pages) ────────────── -->
+  <header class="navbar" role="banner">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="TalentForge Home">
+        <div class="nav-logo-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <span class="nav-logo-text">Talent<span>Forge</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link active">Home 2</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link">Services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-inline-start:4px;vertical-align:middle"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="services.html#executive" class="nav-dropdown-item" role="menuitem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>Executive Search</a>
+            <a href="services.html#staffing" class="nav-dropdown-item" role="menuitem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Staffing Solutions</a>
+            <a href="services.html#hr" class="nav-dropdown-item" role="menuitem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>HR Consulting</a>
+            <a href="services.html#talent" class="nav-dropdown-item" role="menuitem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Talent Pipeline</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-icon-btn theme-toggle-desktop" data-theme-toggle aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-icon-btn" data-rtl-toggle aria-label="Toggle RTL direction">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4"/><path d="M3 12h14"/><path d="M17 8l4 4-4 4"/></svg>
+        </button>
+        <a href="login.html" class="btn btn-primary btn-sm" id="nav-login-btn">Login</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" aria-hidden="true"></div>
+  <nav class="drawer" aria-label="Mobile navigation">
+    <div class="drawer-header">
+      <a href="index.html" class="nav-logo"><div class="nav-logo-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text">Talent<span>Forge</span></span></a>
+      <button class="drawer-close" aria-label="Close menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="drawer-nav">
+      <a href="index.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Home</a>
+      <a href="home2.html" class="drawer-link active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Home 2</a>
+      <a href="services.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>Services</a>
+      <a href="about.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>About</a>
+      <a href="blog.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Blog</a>
+      <a href="contact.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Contact</a>
+      <a href="dashboard.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</a>
+      <a href="login.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>Login</a>
+    </div>
+    <div class="drawer-footer">
+      <button class="nav-icon-btn" data-theme-toggle aria-label="Toggle dark mode" style="width:auto;padding:0 var(--space-3);gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        Dark Mode
+      </button>
+      <button class="nav-icon-btn" data-rtl-toggle aria-label="Toggle RTL" style="width:auto;padding:0 var(--space-3);gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4"/><path d="M3 12h14"/><path d="M17 8l4 4-4 4"/></svg>
+        RTL
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ══ SECTION 1: HERO 2 (Split Layout) ══════════════ -->
+    <section class="hero2 section-full" id="hero2" aria-label="Hero section">
+      <div class="hero2-left">
+        <p class="section-label hero2-label">Redefining Talent Acquisition</p>
+        <h1 class="hero2-title">
+          Hire <em style="font-style:italic;color:var(--color-secondary)">Smarter.</em><br />
+          Grow <em style="font-style:italic;color:var(--color-secondary)">Faster.</em>
+        </h1>
+        <p class="hero2-subtitle">
+          TalentForge's intelligent recruitment ecosystem matches the right people to the right roles — faster and more accurately than any other agency.
+        </p>
+        <div class="flex gap-4 flex-wrap hero2-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg" id="hero2-cta-btn">
+            Start Your Search
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="services.html" class="btn btn-outline btn-lg" id="hero2-services-btn">View Services</a>
+        </div>
+      </div>
+
+      <div class="hero2-right" aria-hidden="true">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero2-visual">
+          <div class="hero2-card">
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-block-end:var(--space-3)">
+              <div style="width:40px;height:40px;border-radius:50%;background:var(--color-secondary);display:flex;align-items:center;justify-content:center;color:#0A1628;font-family:var(--font-heading);font-weight:540;font-size:1.1rem">A</div>
+              <div>
+                <p style="color:#F7F5F0;font-size:var(--size-label);font-weight:500">Alex R. — Senior Engineer</p>
+                <p style="color:rgba(232,238,246,0.5);font-size:var(--size-caption)">Placed at TechSphere • $195K</p>
+              </div>
+              <span class="status-badge hired" style="margin-inline-start:auto">Hired ✓</span>
+            </div>
+            <div style="height:4px;background:rgba(255,255,255,0.08);border-radius:4px"><div style="width:100%;height:100%;background:var(--color-secondary);border-radius:4px;transition:width 2s ease"></div></div>
+          </div>
+
+          <div class="hero2-card" style="margin-block-start:var(--space-4)">
+            <p style="color:rgba(232,238,246,0.6);font-size:var(--size-caption);margin-block-end:var(--space-3)">PIPELINE OVERVIEW</p>
+            <div style="display:flex;gap:var(--space-2);align-items:flex-end">
+              <div style="flex:1;background:rgba(201,168,76,0.3);border-radius:4px;height:60px"></div>
+              <div style="flex:1;background:rgba(201,168,76,0.5);border-radius:4px;height:80px"></div>
+              <div style="flex:1;background:rgba(201,168,76,0.7);border-radius:4px;height:100px"></div>
+              <div style="flex:1;background:var(--color-secondary);border-radius:4px;height:120px"></div>
+              <div style="flex:1;background:rgba(201,168,76,0.6);border-radius:4px;height:90px"></div>
+            </div>
+            <p style="color:rgba(232,238,246,0.5);font-size:var(--size-caption);margin-block-start:var(--space-2)">247 active candidates this week</p>
+          </div>
+
+          <div class="hero2-card" style="margin-block-start:var(--space-4)">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <div>
+                <p style="color:#F7F5F0;font-weight:500;font-size:var(--size-label)">Time to Hire</p>
+                <p style="color:var(--color-secondary);font-family:var(--font-heading);font-size:2rem;font-weight:540">18 <span style="font-size:1rem;color:rgba(232,238,246,0.5)">days avg</span></p>
+              </div>
+              <div style="color:var(--color-success);font-size:var(--size-caption);font-weight:500;background:rgba(39,174,96,0.15);padding:var(--space-2) var(--space-3);border-radius:100px">↓ 40% faster</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 2: STATS BAR ══════════════════════════ -->
+    <section class="stats-bar" aria-labelledby="stats-heading">
+      <div class="container">
+        <h2 class="sr-only" id="stats-heading">TalentForge Statistics</h2>
+        <div class="stats-bar-inner">
+          <div class="stats-bar-item reveal">
+            <span class="stats-bar-num count-up" data-target="15000" data-suffix="+">15,000+</span>
+            <span class="stats-bar-label">Successful Placements</span>
+          </div>
+          <div class="stats-bar-item reveal">
+            <span class="stats-bar-num count-up" data-target="500" data-suffix="+">500+</span>
+            <span class="stats-bar-label">Client Companies</span>
+          </div>
+          <div class="stats-bar-item reveal">
+            <span class="stats-bar-num count-up" data-target="18">18</span>
+            <span class="stats-bar-label">Days Average Time-to-Hire</span>
+          </div>
+          <div class="stats-bar-item reveal">
+            <span class="stats-bar-num count-up" data-target="98" data-suffix="%">98%</span>
+            <span class="stats-bar-label">Retention at 12 Months</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 3: HOW IT WORKS ═══════════════════════ -->
+    <section class="section section-full" id="how-it-works" aria-labelledby="how-heading" style="background:var(--color-bg)">
+      <div class="container">
+        <div class="section-center reveal">
+          <p class="section-label">Our Process</p>
+          <h2 class="section-title" id="how-heading">How TalentForge Works</h2>
+          <p class="section-subtitle">A streamlined, transparent recruitment process designed to deliver results with precision and speed.</p>
+        </div>
+
+        <div class="how-it-works-steps stagger-parent" style="margin-block-start:var(--space-16)">
+          <div class="how-step stagger-child">
+            <div class="how-step-icon" data-step="1">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="card-title" style="font-size:1.2rem">Discovery Brief</h3>
+            <p class="card-text" style="font-size:var(--size-label)">We deep-dive into your culture, role requirements, and ideal candidate profile.</p>
+          </div>
+
+          <div class="how-step stagger-child">
+            <div class="how-step-icon" data-step="2">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="card-title" style="font-size:1.2rem">TalentIQ™ Search</h3>
+            <p class="card-text" style="font-size:var(--size-label)">Our AI + expert team scans 2M+ candidate profiles and engages passively and actively.</p>
+          </div>
+
+          <div class="how-step stagger-child">
+            <div class="how-step-icon" data-step="3">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="card-title" style="font-size:1.2rem">Curated Shortlist</h3>
+            <p class="card-text" style="font-size:var(--size-label)">You receive 4–6 rigorously assessed, interview-ready candidates within 21 days.</p>
+          </div>
+
+          <div class="how-step stagger-child">
+            <div class="how-step-icon" data-step="4">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="card-title" style="font-size:1.2rem">Hire & Succeed</h3>
+            <p class="card-text" style="font-size:var(--size-label)">We support onboarding and monitor success with a full 12-month placement warranty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 4: INDUSTRIES ════════════════════════ -->
+    <section class="section section-full" id="industries" aria-labelledby="industries-heading" style="background:var(--color-surface)">
+      <div class="container">
+        <div class="section-center reveal">
+          <p class="section-label">Our Expertise</p>
+          <h2 class="section-title" id="industries-heading">Industries We Serve</h2>
+          <p class="section-subtitle">Deep sector knowledge means we speak your language and know where to find your next star hire.</p>
+        </div>
+
+        <div class="industries-grid stagger-parent" style="margin-block-start:var(--space-12)">
+          <div class="industry-card stagger-child">
+            <div class="industry-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:520;color:var(--color-text)">Technology</h3>
+            <p style="font-size:var(--size-caption);color:var(--color-text-muted)">Software, AI/ML, Cybersecurity, Cloud</p>
+          </div>
+          <div class="industry-card stagger-child">
+            <div class="industry-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:520;color:var(--color-text)">Finance</h3>
+            <p style="font-size:var(--size-caption);color:var(--color-text-muted)">Investment Banking, PE, FinTech, Insurance</p>
+          </div>
+          <div class="industry-card stagger-child">
+            <div class="industry-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:520;color:var(--color-text)">Healthcare</h3>
+            <p style="font-size:var(--size-caption);color:var(--color-text-muted)">MedTech, Pharma, Clinical, Health IT</p>
+          </div>
+          <div class="industry-card stagger-child">
+            <div class="industry-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:520;color:var(--color-text)">Real Estate</h3>
+            <p style="font-size:var(--size-caption);color:var(--color-text-muted)">Development, PropTech, Asset Management</p>
+          </div>
+          <div class="industry-card stagger-child">
+            <div class="industry-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+            <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:520;color:var(--color-text)">Retail & eCommerce</h3>
+            <p style="font-size:var(--size-caption);color:var(--color-text-muted)">D2C, Marketplace, Supply Chain</p>
+          </div>
+          <div class="industry-card stagger-child">
+            <div class="industry-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg></div>
+            <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:520;color:var(--color-text)">Legal & Compliance</h3>
+            <p style="font-size:var(--size-caption);color:var(--color-text-muted)">Law Firms, In-House Legal, Regulatory</p>
+          </div>
+          <div class="industry-card stagger-child">
+            <div class="industry-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+            <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:520;color:var(--color-text)">Manufacturing</h3>
+            <p style="font-size:var(--size-caption);color:var(--color-text-muted)">Industrial, Automotive, Advanced Mfg</p>
+          </div>
+          <div class="industry-card stagger-child">
+            <div class="industry-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:520;color:var(--color-text)">Government & NGO</h3>
+            <p style="font-size:var(--size-caption);color:var(--color-text-muted)">Public Sector, Nonprofits, Think Tanks</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 5: SUCCESS STORIES (Masonry) ══════════ -->
+    <section class="section section-full" id="success" aria-labelledby="success-heading" style="background:var(--color-bg)">
+      <div class="container">
+        <div class="section-center reveal">
+          <p class="section-label">Social Proof</p>
+          <h2 class="section-title" id="success-heading">Success Stories</h2>
+          <p class="section-subtitle">Real outcomes from real people. Here's what our community of talent and employers say about working with TalentForge.</p>
+        </div>
+
+        <div class="success-masonry reveal" style="margin-block-start:var(--space-12)">
+          <div class="success-item">
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-block-end:var(--space-4)">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&auto=format&fit=crop&q=70" alt="Elena Vasquez" style="width:40px;height:40px;border-radius:50%;object-fit:cover" loading="lazy" />
+              <div><p style="font-weight:500;font-size:var(--size-label);color:var(--color-text)">Elena Vasquez</p><p style="font-size:var(--size-caption);color:var(--color-secondary)">Head of Product — Placed 2024</p></div>
+            </div>
+            <p style="font-size:var(--size-label);color:var(--color-text-muted);line-height:1.65;font-style:italic">"I was skeptical of recruiting firms, but TalentForge changed my mind entirely. They found me a role at a unicorn startup — 45% pay increase and work I genuinely love."</p>
+            <div style="display:flex;gap:4px;margin-block-start:var(--space-3)">⭐⭐⭐⭐⭐</div>
+          </div>
+
+          <div class="success-item">
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-block-end:var(--space-4)">
+              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=80&auto=format&fit=crop&q=70" alt="David Park" style="width:40px;height:40px;border-radius:50%;object-fit:cover" loading="lazy" />
+              <div><p style="font-weight:500;font-size:var(--size-label);color:var(--color-text)">David Park</p><p style="font-size:var(--size-caption);color:var(--color-secondary)">CHRO — FutureTech Corp</p></div>
+            </div>
+            <p style="font-size:var(--size-label);color:var(--color-text-muted);line-height:1.65;font-style:italic">"We needed to hire 50 engineers in 90 days for a major product launch. TalentForge delivered 47 qualified hires. Absolutely extraordinary execution."</p>
+            <div style="display:flex;gap:4px;margin-block-start:var(--space-3)">⭐⭐⭐⭐⭐</div>
+          </div>
+
+          <div class="success-item">
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-block-end:var(--space-4)">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&auto=format&fit=crop&q=70" alt="Nadia Osei" style="width:40px;height:40px;border-radius:50%;object-fit:cover" loading="lazy" />
+              <div><p style="font-weight:500;font-size:var(--size-label);color:var(--color-text)">Nadia Osei</p><p style="font-size:var(--size-caption);color:var(--color-secondary)">CFO — Meridian Group</p></div>
+            </div>
+            <p style="font-size:var(--size-label);color:var(--color-text-muted);line-height:1.65;font-style:italic">"Three other firms had tried and failed to fill our CFO position. TalentForge succeeded in 28 days. The candidate they placed is simply outstanding."</p>
+            <div style="display:flex;gap:4px;margin-block-start:var(--space-3)">⭐⭐⭐⭐⭐</div>
+          </div>
+
+          <div class="success-item">
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-block-end:var(--space-4)">
+              <img src="https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?w=80&auto=format&fit=crop&q=70" alt="Robert Lim" style="width:40px;height:40px;border-radius:50%;object-fit:cover" loading="lazy" />
+              <div><p style="font-weight:500;font-size:var(--size-label);color:var(--color-text)">Robert Lim</p><p style="font-size:var(--size-caption);color:var(--color-secondary)">Senior Engineer — Placed 2023</p></div>
+            </div>
+            <p style="font-size:var(--size-label);color:var(--color-text-muted);line-height:1.65;font-style:italic">"After 8 months of searching on my own, TalentForge got me three offers in two weeks. Their coaching and support throughout the process was invaluable."</p>
+            <div style="display:flex;gap:4px;margin-block-start:var(--space-3)">⭐⭐⭐⭐⭐</div>
+          </div>
+
+          <div class="success-item">
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-block-end:var(--space-4)">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=80&auto=format&fit=crop&q=70" alt="Camille Fontaine" style="width:40px;height:40px;border-radius:50%;object-fit:cover" loading="lazy" />
+              <div><p style="font-weight:500;font-size:var(--size-label);color:var(--color-text)">Camille Fontaine</p><p style="font-size:var(--size-caption);color:var(--color-secondary)">VP Marketing — BrandLabs</p></div>
+            </div>
+            <p style="font-size:var(--size-label);color:var(--color-text-muted);line-height:1.65;font-style:italic">"The caliber of candidates TalentForge sends is remarkably high. They pre-vet extensively, so we only meet people who are genuinely impressive. Saves us enormous time."</p>
+            <div style="display:flex;gap:4px;margin-block-start:var(--space-3)">⭐⭐⭐⭐⭐</div>
+          </div>
+
+          <div class="success-item">
+            <div style="display:flex;align-items:center;gap:var(--space-3);margin-block-end:var(--space-4)">
+              <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=80&auto=format&fit=crop&q=70" alt="Tyler Brooks" style="width:40px;height:40px;border-radius:50%;object-fit:cover" loading="lazy" />
+              <div><p style="font-weight:500;font-size:var(--size-label);color:var(--color-text)">Tyler Brooks</p><p style="font-size:var(--size-caption);color:var(--color-secondary)">Data Scientist — Placed 2024</p></div>
+            </div>
+            <p style="font-size:var(--size-label);color:var(--color-text-muted);line-height:1.65;font-style:italic">"Landed my dream role at a Series C AI company thanks to TalentForge. They negotiated a package I never would have achieved on my own. Phenomenal advocates."</p>
+            <div style="display:flex;gap:4px;margin-block-start:var(--space-3)">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 6: PARTNER MARQUEE ═══════════════════ -->
+    <section class="section" id="partners" aria-labelledby="partners-heading" style="background:var(--color-surface);padding-block:var(--space-16)">
+      <div class="container">
+        <div class="section-center reveal mb-8">
+          <p class="section-label">Trusted By</p>
+          <h2 class="section-title" id="partners-heading">Clients Who Trust TalentForge</h2>
+        </div>
+      </div>
+      <div class="marquee-wrap reveal" aria-label="Partner company logos">
+        <div class="marquee-track">
+          <span class="partner-logo">Accenture</span>
+          <span class="partner-logo">Goldman Sachs</span>
+          <span class="partner-logo">Microsoft</span>
+          <span class="partner-logo">McKinsey</span>
+          <span class="partner-logo">Deloitte</span>
+          <span class="partner-logo">Amazon</span>
+          <span class="partner-logo">Sequoia</span>
+          <span class="partner-logo">BlackRock</span>
+          <span class="partner-logo">Google</span>
+          <span class="partner-logo">JP Morgan</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="partner-logo" aria-hidden="true">Accenture</span>
+          <span class="partner-logo" aria-hidden="true">Goldman Sachs</span>
+          <span class="partner-logo" aria-hidden="true">Microsoft</span>
+          <span class="partner-logo" aria-hidden="true">McKinsey</span>
+          <span class="partner-logo" aria-hidden="true">Deloitte</span>
+          <span class="partner-logo" aria-hidden="true">Amazon</span>
+          <span class="partner-logo" aria-hidden="true">Sequoia</span>
+          <span class="partner-logo" aria-hidden="true">BlackRock</span>
+          <span class="partner-logo" aria-hidden="true">Google</span>
+          <span class="partner-logo" aria-hidden="true">JP Morgan</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text" style="color:#F7F5F0">Talent<span>Forge</span></span></a>
+          <p>Connecting exceptional talent with industry-leading companies since 2006. Your hiring success is our only mission.</p>
+          <div class="footer-social" aria-label="Social media">
+            <a href="#" class="footer-social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Services</p>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Executive Search</a></li>
+            <li><a href="services.html" class="footer-link">Tech Recruitment</a></li>
+            <li><a href="services.html" class="footer-link">Staffing Solutions</a></li>
+            <li><a href="services.html" class="footer-link">HR Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Company</p>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="coming-soon.html" class="footer-link">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Newsletter</p>
+          <p style="font-size:var(--size-label);color:rgba(232,238,246,0.55);margin-block-end:var(--space-4)">Weekly talent market insights directly to your inbox.</p>
+          <form class="footer-newsletter newsletter-form">
+            <input type="email" class="form-input" placeholder="Your email" aria-label="Newsletter email" id="footer-email-h2" />
+            <button type="submit" class="btn btn-primary btn-sm">Go</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 TalentForge. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

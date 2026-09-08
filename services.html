@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — TalentForge | Recruitment & Staffing Solutions</title>
+  <meta name="description" content="Explore TalentForge's full suite of recruitment services: executive search, tech staffing, HR consulting, talent pipeline, and employer branding." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="TalentForge Home"><div class="nav-logo-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text">Talent<span>Forge</span></span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="nav-link active">Services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-inline-start:4px;vertical-align:middle"><polyline points="6 9 12 15 18 9"/></svg></a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="#executive" class="nav-dropdown-item" role="menuitem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>Executive Search</a>
+            <a href="#staffing" class="nav-dropdown-item" role="menuitem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Staffing Solutions</a>
+            <a href="#hr" class="nav-dropdown-item" role="menuitem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/></svg>HR Consulting</a>
+            <a href="#talent" class="nav-dropdown-item" role="menuitem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Talent Pipeline</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-icon-btn theme-toggle-desktop" data-theme-toggle aria-label="Toggle dark mode"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <button class="nav-icon-btn" data-rtl-toggle aria-label="Toggle RTL"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4"/><path d="M3 12h14"/><path d="M17 8l4 4-4 4"/></svg></button>
+        <a href="login.html" class="btn btn-primary btn-sm" id="nav-login-btn">Login</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+    </div>
+  </header>
+  <div class="drawer-overlay" aria-hidden="true"></div>
+  <nav class="drawer" aria-label="Mobile navigation">
+    <div class="drawer-header"><a href="index.html" class="nav-logo"><div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text">Talent<span>Forge</span></span></a><button class="drawer-close" aria-label="Close menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <div class="drawer-nav">
+      <a href="index.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Home</a>
+      <a href="home2.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Home 2</a>
+      <a href="services.html" class="drawer-link active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>Services</a>
+      <a href="about.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>About</a>
+      <a href="blog.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Blog</a>
+      <a href="contact.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>Contact</a>
+      <a href="dashboard.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</a>
+      <a href="login.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>Login</a>
+    </div>
+    <div class="drawer-footer">
+      <button class="nav-icon-btn" data-theme-toggle aria-label="Toggle dark mode" style="width:auto;padding:0 var(--space-3);gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>Dark Mode</button>
+      <button class="nav-icon-btn" data-rtl-toggle aria-label="Toggle RTL" style="width:auto;padding:0 var(--space-3);gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4"/><path d="M3 12h14"/><path d="M17 8l4 4-4 4"/></svg>RTL</button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- ══ SECTION 1: PAGE HERO ════════════════════════ -->
+    <section class="page-hero section-full" id="services-hero" aria-label="Services hero">
+      <div class="page-hero-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <span>Services</span>
+          </nav>
+          <h1 class="page-hero-title reveal">Recruitment Services<br /><em style="color:var(--color-secondary);font-style:italic">That Deliver Results</em></h1>
+          <p class="page-hero-subtitle reveal">From executive search to high-volume staffing, TalentForge offers tailored solutions across every level and industry vertical.</p>
+          <div class="flex gap-4 mt-6 reveal">
+            <a href="contact.html" class="btn btn-primary btn-lg" id="services-cta-hero">Discuss Your Needs</a>
+            <a href="#pricing" class="btn btn-outline btn-lg" style="color:#F7F5F0;border-color:rgba(255,255,255,0.25)" id="view-pricing-btn">View Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 2: SERVICE CARDS ══════════════════════ -->
+    <section class="section section-full" id="executive" aria-labelledby="service-cards-heading" style="background:var(--color-bg)">
+      <div class="container">
+        <div class="section-center reveal">
+          <p class="section-label">Our Offerings</p>
+          <h2 class="section-title" id="service-cards-heading">Six Core Services</h2>
+          <p class="section-subtitle">Each service is led by industry-specialized consultants with an average of 12 years in their respective sectors.</p>
+        </div>
+
+        <div class="services-detail-grid stagger-parent" style="margin-block-start:var(--space-12)" id="staffing">
+          <article class="service-detail-card stagger-child" aria-labelledby="exec-title">
+            <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+            <h3 class="card-title" id="exec-title">Executive Search</h3>
+            <p class="card-text">C-suite, VP, and Director-level retained search. We use behavioral assessment, reference intelligence, and market mapping to find leaders who move the needle.</p>
+            <ul style="text-align:start;margin-block:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2)">
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>CEO, CFO, CTO, CMO placements</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Board member & independent director search</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>12-month placement guarantee</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" id="exec-cta">Get Started</a>
+          </article>
+
+          <article class="service-detail-card stagger-child" aria-labelledby="tech-title">
+            <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+            <h3 class="card-title" id="tech-title">Tech Recruitment</h3>
+            <p class="card-text">Dedicated technology recruiters who understand the stack. We source and vet engineers, architects, DevOps, QA, and product talent globally.</p>
+            <ul style="text-align:start;margin-block:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2)">
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Full-stack, backend, ML/AI engineers</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Technical assessment & vetting</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Remote & hybrid talent globally</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" id="tech-cta">Get Started</a>
+          </article>
+
+          <article class="service-detail-card stagger-child" aria-labelledby="staff-title" id="hr">
+            <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3 class="card-title" id="staff-title">Staffing Solutions</h3>
+            <p class="card-text">Flexible models — permanent, contract, temp-to-hire — for your operational, financial, legal, and sales teams at any scale.</p>
+            <ul style="text-align:start;margin-block:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2)">
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Contract & interim staffing</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Volume hiring & RPO solutions</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Payroll & compliance management</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" id="staff-cta">Get Started</a>
+          </article>
+
+          <article class="service-detail-card stagger-child" aria-labelledby="hr-title" id="talent">
+            <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+            <h3 class="card-title" id="hr-title">HR Consulting</h3>
+            <p class="card-text">Strategic advisory on workforce transformation, DEI, leadership development, organizational design, and compensation benchmarking.</p>
+            <ul style="text-align:start;margin-block:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2)">
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Organizational design & restructuring</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Compensation benchmarking</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>DEI strategy & implementation</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" id="hr-cta">Get Started</a>
+          </article>
+
+          <article class="service-detail-card stagger-child" aria-labelledby="pipeline-title">
+            <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <h3 class="card-title" id="pipeline-title">Talent Pipeline</h3>
+            <p class="card-text">We proactively build and warm a curated pipeline of candidates for your ongoing and future needs — so you're never starting from scratch.</p>
+            <ul style="text-align:start;margin-block:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2)">
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Passive candidate engagement</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Market mapping & competitor analysis</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Quarterly pipeline reporting</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" id="pipeline-cta">Get Started</a>
+          </article>
+
+          <article class="service-detail-card stagger-child" aria-labelledby="brand-title">
+            <div class="card-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+            <h3 class="card-title" id="brand-title">Employer Branding</h3>
+            <p class="card-text">We craft your employer value proposition, amplify it on the right channels, and help you attract top talent organically — reducing cost per hire by up to 40%.</p>
+            <ul style="text-align:start;margin-block:var(--space-4);display:flex;flex-direction:column;gap:var(--space-2)">
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>EVP development & content strategy</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Glassdoor & LinkedIn optimization</li>
+              <li style="display:flex;align-items:center;gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Talent community building</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" id="brand-cta">Get Started</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 3: PROCESS ════════════════════════════ -->
+    <section class="section section-full" id="process" aria-labelledby="process-heading" style="background:var(--color-surface)">
+      <div class="container">
+        <div class="section-center reveal">
+          <p class="section-label">How We Work</p>
+          <h2 class="section-title" id="process-heading">The TalentForge Process</h2>
+          <p class="section-subtitle">A proven, repeatable methodology that consistently delivers exceptional candidates on time and within scope.</p>
+        </div>
+        <div class="process-steps stagger-parent" style="margin-block-start:var(--space-16)">
+          <div class="process-step stagger-child">
+            <div class="process-step-num" aria-label="Step 1">1</div>
+            <h3 class="card-title" style="font-size:1.2rem">Discovery</h3>
+            <p class="card-text" style="font-size:var(--size-label)">In-depth briefing session to understand your culture, goals, and ideal candidate profile.</p>
+          </div>
+          <div class="process-step stagger-child">
+            <div class="process-step-num" aria-label="Step 2">2</div>
+            <h3 class="card-title" style="font-size:1.2rem">Search & Screen</h3>
+            <p class="card-text" style="font-size:var(--size-label)">AI-powered + human-led search across 2M+ talent profiles, behavioral interviews conducted.</p>
+          </div>
+          <div class="process-step stagger-child">
+            <div class="process-step-num" aria-label="Step 3">3</div>
+            <h3 class="card-title" style="font-size:1.2rem">Shortlist</h3>
+            <p class="card-text" style="font-size:var(--size-label)">You receive 4–6 pre-vetted, interview-ready candidates with detailed assessment reports.</p>
+          </div>
+          <div class="process-step stagger-child">
+            <div class="process-step-num" aria-label="Step 4">4</div>
+            <h3 class="card-title" style="font-size:1.2rem">Hire & Onboard</h3>
+            <p class="card-text" style="font-size:var(--size-label)">Offer management, negotiation support, and 12-month post-placement check-ins.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 4: PRICING ════════════════════════════ -->
+    <section class="section section-full" id="pricing" aria-labelledby="pricing-heading" style="background:var(--color-bg)">
+      <div class="container">
+        <div class="section-center reveal">
+          <p class="section-label">Transparent Pricing</p>
+          <h2 class="section-title" id="pricing-heading">Investment Plans</h2>
+          <p class="section-subtitle">Straightforward, value-aligned pricing. No hidden fees. No surprises. Just results.</p>
+        </div>
+
+        <div class="pricing-grid reveal" style="margin-block-start:var(--space-12)">
+          <div class="pricing-card">
+            <div class="pricing-label">Essentials</div>
+            <p class="pricing-title">Core Staffing</p>
+            <div class="pricing-price"><sup>$</sup>8K</div>
+            <span class="pricing-price-label">per successful placement</span>
+            <ul class="pricing-features">
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Up to Manager-level roles</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>4-week turnaround target</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>3-month placement warranty</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Dedicated consultant</li>
+              <li class="pricing-feature" style="opacity:0.35"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Executive search access</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center" id="plan-essentials-btn">Get Started</a>
+          </div>
+
+          <div class="pricing-card featured">
+            <div class="pricing-label">Most Popular</div>
+            <p class="pricing-title">Professional</p>
+            <div class="pricing-price"><sup>$</sup>18K</div>
+            <span class="pricing-price-label">per successful placement</span>
+            <ul class="pricing-features">
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Director to VP-level roles</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>21-day turnaround guarantee</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>6-month placement warranty</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>TalentIQ™ AI matching</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Behavioral assessment included</li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;background:#F7F5F0;color:#0A1628" id="plan-pro-btn">Get Started</a>
+          </div>
+
+          <div class="pricing-card">
+            <div class="pricing-label">Enterprise</div>
+            <p class="pricing-title">Executive Retainer</p>
+            <div class="pricing-price" style="font-size:2.5rem">Custom</div>
+            <span class="pricing-price-label">retainer-based engagement</span>
+            <ul class="pricing-features">
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>C-Suite & Board-level search</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>12-month placement warranty</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Exclusive market mapping</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Dedicated senior partner</li>
+              <li class="pricing-feature"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>Unlimited revisions & replacements</li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center" id="plan-enterprise-btn">Book a Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ SECTION 5: FAQ ════════════════════════════════ -->
+    <section class="section section-full" id="faq" aria-labelledby="faq-heading" style="background:var(--color-surface)">
+      <div class="container">
+        <div class="section-center reveal">
+          <p class="section-label">Questions Answered</p>
+          <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know before partnering with TalentForge.</p>
+        </div>
+
+        <div class="faq-list reveal" style="margin-block-start:var(--space-10)" role="list">
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q1">
+              How long does a typical executive search take?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer"><div class="faq-answer-inner">For senior roles, we deliver a curated shortlist within 21 business days of brief acceptance. End-to-end timelines typically run 6–10 weeks depending on interview scheduling and notice periods. Our Professional and Enterprise clients benefit from our 21-day guarantee.</div></div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q2">
+              What happens if the placed candidate leaves within the warranty period?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer"><div class="faq-answer-inner">If a placed candidate leaves voluntarily or is let go within the warranty period, we conduct a free replacement search at no additional cost. Our Enterprise retainer includes unlimited replacements. This is our commitment to your hiring success.</div></div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q3">
+              Do you work with startups or only large enterprises?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer"><div class="faq-answer-inner">TalentForge works with organizations at every stage — from pre-seed startups building their founding team to Fortune 500 companies restructuring entire divisions. Our Core Staffing plan is designed with startup budgets in mind, while our Enterprise Retainer serves the world's most complex organizations.</div></div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q4">
+              How is TalentForge different from posting on LinkedIn or Indeed?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer"><div class="faq-answer-inner">Job boards attract active job seekers — typically 20% of the market. TalentForge accesses the remaining 80%: top performers who are currently employed but open to the right opportunity. Our proactive headhunting methodology reaches candidates who would never see your job posting.</div></div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" id="faq-q5">
+              Is TalentForge available internationally?
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </button>
+            <div class="faq-answer"><div class="faq-answer-inner">Yes. TalentForge operates in 30+ countries with local consultants in North America, Europe, the Middle East, and Asia-Pacific. We handle cross-border placements, visa advisory, and international compensation benchmarking as part of our global service offering.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section" style="padding-block:var(--space-20)" aria-labelledby="services-cta-heading">
+      <div class="container section-center reveal">
+        <p class="section-label" style="color:rgba(201,168,76,0.8)">Ready to Start?</p>
+        <h2 class="section-title" id="services-cta-heading">Begin Your Search Today</h2>
+        <p class="section-subtitle">Book a free 30-minute strategy call with one of our senior consultants. No obligation, just expert advice.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg mt-8" id="services-bottom-cta">Book Free Consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text" style="color:#F7F5F0">Talent<span>Forge</span></span></a><p>Your hiring success is our only mission.</p><div class="footer-social"><a href="#" class="footer-social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div></div>
+        <div class="footer-col"><p class="footer-col-title">Services</p><ul class="footer-links"><li><a href="#executive" class="footer-link">Executive Search</a></li><li><a href="#staffing" class="footer-link">Staffing Solutions</a></li><li><a href="#hr" class="footer-link">HR Consulting</a></li><li><a href="#talent" class="footer-link">Talent Pipeline</a></li></ul></div>
+        <div class="footer-col"><p class="footer-col-title">Company</p><ul class="footer-links"><li><a href="about.html" class="footer-link">About Us</a></li><li><a href="blog.html" class="footer-link">Blog</a></li><li><a href="contact.html" class="footer-link">Contact</a></li></ul></div>
+        <div class="footer-col"><p class="footer-col-title">Contact</p><ul class="footer-links"><li><a href="mailto:hello@talentforge.com" class="footer-link">hello@talentforge.com</a></li><li><a href="tel:+18005527771" class="footer-link">+1 800 552 7771</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p class="footer-copy">© 2026 TalentForge. All rights reserved.</p><nav class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></nav></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

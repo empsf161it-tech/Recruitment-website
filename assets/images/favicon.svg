@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1E35"/>
+      <stop offset="100%" stop-color="#060E1B"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E9C4"/>
+      <stop offset="50%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#9A7B2C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle gold inner border -->
+  <rect x="20" y="20" width="472" height="472" rx="108" fill="none" stroke="url(#goldGrad)" stroke-width="10" stroke-opacity="0.4"/>
+
+  <!-- Briefcase Emblem in Gold -->
+  <g transform="translate(96, 96) scale(13.333)">
+    <!-- Main briefcase box -->
+    <path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" 
+          fill="none" 
+          stroke="url(#goldGrad)" 
+          stroke-width="2.2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+    <!-- Briefcase handle -->
+    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" 
+          fill="none" 
+          stroke="url(#goldGrad)" 
+          stroke-width="2.2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+  </g>
+</svg>
