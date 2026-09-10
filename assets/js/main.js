@@ -107,38 +107,20 @@ const Navbar = {
       }
     });
 
-    // Hamburger / Drawer
-    const hamburger = document.querySelector('.hamburger');
-    const drawer = document.querySelector('.drawer');
-    const overlay = document.querySelector('.drawer-overlay');
-    const drawerClose = document.querySelector('.drawer-close');
-
-    const openDrawer = () => {
-      hamburger?.classList.add('open');
-      drawer?.classList.add('open');
-      overlay?.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    };
-
-    const closeDrawer = () => {
-      hamburger?.classList.remove('open');
-      drawer?.classList.remove('open');
-      overlay?.classList.remove('open');
-      document.body.style.overflow = '';
-    };
-
-    hamburger?.addEventListener('click', openDrawer);
-    drawerClose?.addEventListener('click', closeDrawer);
-    overlay?.addEventListener('click', closeDrawer);
-
-    // Close drawer on link click
-    document.querySelectorAll('.drawer-link').forEach(link => {
-      link.addEventListener('click', closeDrawer);
-    });
-
-    // Escape key
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') closeDrawer();
+    // Brand logo & Nav links click handler for smooth scroll when re-clicking current page
+    document.querySelectorAll('.nav-link, .nav-logo, .drawer-link').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        if (!href) return;
+        const cleanHref = href.split('#')[0];
+        const isCurrentPage = cleanHref === currentPage || 
+          (currentPage === 'index.html' && (cleanHref === '' || cleanHref === '#' || cleanHref === './'));
+        
+        if (isCurrentPage && !href.includes('#')) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
     });
 
     // GSAP nav entrance
@@ -147,7 +129,69 @@ const Navbar = {
       opacity: 0,
       duration: 0.8,
       ease: 'power3.out',
-      delay: 0.2
+      delay: 0.2,
+      clearProps: 'all'
+    });
+  }
+};
+
+// ════════════════════════════════════════════════════════════
+// DRAWER MANAGER
+// ════════════════════════════════════════════════════════════
+const DrawerManager = {
+  init() {
+    const hamburgers = document.querySelectorAll('.hamburger, #sidebar-toggle, .dash-sidebar-toggle');
+    const drawers = document.querySelectorAll('.drawer, #dash-sidebar, .dash-sidebar');
+    const overlay = document.querySelector('.drawer-overlay');
+    const drawerCloseButtons = document.querySelectorAll('.drawer-close');
+
+    if (!hamburgers.length && !drawers.length) return;
+
+    const toggleDrawer = (e) => {
+      if (e) e.stopPropagation();
+      const firstDrawer = drawers[0];
+      const isOpen = firstDrawer?.classList.contains('open');
+      if (isOpen) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+    };
+
+    const openDrawer = () => {
+      hamburgers.forEach(h => h.classList.add('open'));
+      drawers.forEach(d => d.classList.add('open'));
+      overlay?.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeDrawer = () => {
+      hamburgers.forEach(h => h.classList.remove('open'));
+      drawers.forEach(d => d.classList.remove('open'));
+      overlay?.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+
+    hamburgers.forEach(h => {
+      h.addEventListener('click', toggleDrawer);
+    });
+
+    drawerCloseButtons.forEach(btn => {
+      btn.addEventListener('click', closeDrawer);
+    });
+
+    if (overlay) {
+      overlay.addEventListener('click', closeDrawer);
+    }
+
+    document.querySelectorAll('.drawer-link, .dash-nav-item').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 1024) closeDrawer();
+      });
+    });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeDrawer();
     });
   }
 };
@@ -663,18 +707,62 @@ const SmoothScroll = {
 // ════════════════════════════════════════════════════════════
 const DashboardSidebar = {
   init() {
-    const toggle = document.querySelector('.sidebar-toggle');
-    const sidebar = document.querySelector('.sidebar');
-    if (!toggle || !sidebar) return;
+    const toggle = document.querySelector('#sidebar-toggle, .dash-sidebar-toggle, .sidebar-toggle');
+    const sidebar = document.querySelector('#dash-sidebar, .dash-sidebar, .sidebar');
+    
+    // Toggle mobile sidebar
+    if (toggle && sidebar) {
+      toggle.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
 
-    toggle.addEventListener('click', () => {
-      sidebar.classList.toggle('open');
+      document.addEventListener('click', e => {
+        if (!sidebar.contains(e.target) && !toggle.contains(e.target)) {
+          sidebar.classList.remove('open');
+        }
+      });
+    }
+
+    // Sidebar navigation active state switching & smooth scroll targeting
+    const navItems = document.querySelectorAll('.dash-nav-item');
+    navItems.forEach(item => {
+      item.addEventListener('click', e => {
+        navItems.forEach(nav => {
+          nav.classList.remove('active');
+          nav.removeAttribute('aria-current');
+        });
+        item.classList.add('active');
+        item.setAttribute('aria-current', 'page');
+
+        // Scroll or focus targeted section
+        const id = item.id;
+        let targetEl = null;
+        if (id === 'dash-nav-overview') targetEl = document.querySelector('#dash-root');
+        else if (id === 'dash-nav-jobs') targetEl = document.querySelector('#kpi-placements');
+        else if (id === 'dash-nav-candidates') targetEl = document.querySelector('#candidates-table-wrap');
+        else if (id === 'dash-nav-messages') targetEl = document.querySelector('#activity-wrap');
+        else if (id === 'dash-nav-analytics') targetEl = document.querySelector('#chart-applications-wrap');
+        else if (id === 'dash-nav-settings') targetEl = document.querySelector('#dash-sidebar');
+
+        if (targetEl && id !== 'dash-nav-overview') {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else if (id === 'dash-nav-overview') {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
     });
+  }
+};
 
-    document.addEventListener('click', e => {
-      if (!sidebar.contains(e.target) && !toggle.contains(e.target)) {
-        sidebar.classList.remove('open');
-      }
+// ════════════════════════════════════════════════════════════
+// BACK TO TOP
+// ════════════════════════════════════════════════════════════
+const BackToTop = {
+  init() {
+    document.querySelectorAll('.back-to-top-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
     });
   }
 };
@@ -686,6 +774,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ThemeManager.init();
   RTLManager.init();
   Navbar.init();
+  DrawerManager.init();
   SmoothScroll.init();
   ScrollAnimations.init();
   FAQ.init();
@@ -693,6 +782,7 @@ document.addEventListener('DOMContentLoaded', () => {
   Carousel.init();
   PasswordToggle.init();
   DashboardSidebar.init();
+  BackToTop.init();
 
   // Page-specific inits
   if (document.querySelector('.hero')) {
