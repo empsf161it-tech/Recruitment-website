@@ -759,13 +759,40 @@ const DashboardSidebar = {
 // ════════════════════════════════════════════════════════════
 const BackToTop = {
   init() {
-    document.querySelectorAll('.back-to-top-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
+    // 1. Dynamic creation of floating button if not present in HTML
+    let floatBtn = document.querySelector('.back-to-top-floating');
+    if (!floatBtn) {
+      floatBtn = document.createElement('button');
+      floatBtn.className = 'back-to-top-btn back-to-top-floating';
+      floatBtn.setAttribute('aria-label', 'Back to top');
+      floatBtn.setAttribute('title', 'Back to top');
+      floatBtn.type = 'button';
+      floatBtn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>`;
+      document.body.appendChild(floatBtn);
+    }
+
+    // 2. Scroll event to toggle visibility
+    const handleScroll = () => {
+      if (window.scrollY > 250) {
+        floatBtn.classList.add('visible');
+      } else {
+        floatBtn.classList.remove('visible');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    // 3. Smooth scroll handling for all back-to-top triggers
+    document.querySelectorAll('.back-to-top-btn, .back-to-top-floating').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
   }
 };
+
 
 // ════════════════════════════════════════════════════════════
 // INIT

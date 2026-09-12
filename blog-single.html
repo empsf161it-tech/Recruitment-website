@@ -149,6 +149,148 @@
           <div class="blog-grid" style="grid-template-columns:repeat(2,1fr)">
             <a href="blog-single.html" class="blog-card" style="text-decoration:none" aria-label="Related article 1">
               <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&auto=format&fit=crop&q=70" alt="" class="blog-card-img" loading="lazy" /></div>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="TalentForge Home"><div class="nav-logo-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text">Talent<span>Forge</span></span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <div class="nav-dropdown"><a href="services.html" class="nav-link">Services <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-inline-start:4px;vertical-align:middle"><polyline points="6 9 12 15 18 9"/></svg></a><div class="nav-dropdown-menu"><a href="services.html#executive" class="nav-dropdown-item">Executive Search</a><a href="services.html#staffing" class="nav-dropdown-item">Staffing Solutions</a></div></div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-icon-btn theme-toggle-desktop" data-theme-toggle aria-label="Toggle dark mode"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <button class="nav-icon-btn" data-rtl-toggle aria-label="Toggle RTL"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4"/><path d="M3 12h14"/><path d="M17 8l4 4-4 4"/></svg></button>
+        <a href="login.html" class="btn btn-primary btn-sm" id="nav-login-btn">Login</a>
+      </div>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false"><span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span></button>
+    </div>
+  </header>
+  <div class="drawer-overlay" aria-hidden="true"></div>
+  <nav class="drawer" aria-label="Mobile navigation">
+    <div class="drawer-header"><a href="index.html" class="nav-logo"><div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text">Talent<span>Forge</span></span></a><button class="drawer-close" aria-label="Close"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <div class="drawer-nav">
+      <a href="index.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Home</a>
+      <a href="blog.html" class="drawer-link active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>Blog</a>
+      <a href="services.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>Services</a>
+      <a href="contact.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/></svg>Contact</a>
+      <a href="login.html" class="drawer-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>Login</a>
+    </div>
+    <div class="drawer-footer">
+      <button class="nav-icon-btn" data-theme-toggle aria-label="Toggle dark mode" style="width:auto;padding:0 var(--space-3);gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/></svg><svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>Dark Mode</button>
+      <button class="nav-icon-btn" data-rtl-toggle aria-label="RTL" style="width:auto;padding:0 var(--space-3);gap:var(--space-2);font-size:var(--size-label);color:var(--color-text-muted)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16l-4-4 4-4"/><path d="M3 12h14"/><path d="M17 8l4 4-4 4"/></svg>RTL</button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- BLOG SINGLE HERO -->
+    <section class="blog-single-hero" id="article-hero" aria-label="Article header">
+      <div class="page-hero-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-content reveal">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><a href="blog.html">Blog</a><span class="breadcrumb-sep">/</span><span>Article</span></nav>
+          <span class="tag" style="margin-block-end:var(--space-5);display:inline-block">Strategy</span>
+          <h1 class="page-hero-title" style="max-width:800px">Why the War for Talent Is Over — And Who Won</h1>
+          <div class="blog-meta" style="margin-block-start:var(--space-5);color:rgba(232,238,246,0.6)">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&auto=format&fit=crop&q=70" alt="Alexandra Reid" style="width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid rgba(201,168,76,0.4)" loading="lazy" />
+            <span>Alexandra Reid</span>
+            <span>·</span>
+            <span>August 28, 2026</span>
+            <span>·</span>
+            <span>8 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLE CONTENT -->
+    <section class="section" id="article-body" style="background:var(--color-bg)">
+      <div class="blog-single-content reveal">
+        <img
+          src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=900&auto=format&fit=crop&q=70"
+          alt="Modern office environment with diverse team"
+          style="width:100%;border-radius:var(--radius-lg);margin-block-end:var(--space-10)"
+          loading="lazy"
+        />
+
+        <p>For two decades, the "war for talent" dominated boardroom conversations. Companies scrambled to outbid competitors on salaries, stock options, and ping pong tables. The assumption was simple: talent is scarce, so the highest bidder wins.</p>
+
+        <p>That narrative is dead. And the data makes clear who killed it — and who survived.</p>
+
+        <h2>What the Data Actually Shows</h2>
+
+        <p>TalentForge's analysis of 2,400 executive placements made between 2020 and 2026 reveals a striking pattern. Companies that focused primarily on compensation escalation experienced 34% higher first-year attrition than the sector average. Meanwhile, organizations that invested in three key areas consistently outperformed:</p>
+
+        <ul style="margin-block:var(--space-5) var(--space-5);padding-inline-start:var(--space-6)">
+          <li style="margin-block-end:var(--space-3);color:var(--color-text-muted);line-height:1.65"><strong style="color:var(--color-text)">Employer Value Proposition (EVP) clarity:</strong> candidates who could articulate why they joined a company stayed 2.8x longer on average.</li>
+          <li style="margin-block-end:var(--space-3);color:var(--color-text-muted);line-height:1.65"><strong style="color:var(--color-text)">Flexible work architecture:</strong> hybrid-first companies received 3.5x more qualified applications per role than full return-to-office mandates.</li>
+          <li style="margin-block-end:var(--space-3);color:var(--color-text-muted);line-height:1.65"><strong style="color:var(--color-text)">Internal mobility culture:</strong> organizations with structured growth paths retained 28% more high performers year over year.</li>
+        </ul>
+
+        <blockquote>
+          "The companies that won the talent game didn't just offer more — they offered something genuinely different. Something a competing offer couldn't simply match with a higher number."
+        </blockquote>
+
+        <h2>The Three Types of Companies That Emerged</h2>
+
+        <p>Post-pandemic, we've observed three clear archetypes in how organizations relate to talent:</p>
+
+        <h3 style="text-align:start;margin-block:var(--space-6) var(--space-3)">1. The Adaptors</h3>
+        <p>These organizations moved quickly to redesign their employment model. They built genuine flexibility into roles, invested in manager capability (the primary driver of retention, per our data), and created authentic culture narratives that candidates could verify through peer channels like Glassdoor and Blind. They're now hiring the top 15% of the market.</p>
+
+        <h3 style="text-align:start;margin-block:var(--space-6) var(--space-3)">2. The Bidders</h3>
+        <p>These companies responded to the competitive market by simply escalating compensation. While effective short-term, this approach created unstable cohorts of employees who joined primarily for money and left for the same reason. These organizations are now dealing with talent debt — high attrition and depressed employer brand equity.</p>
+
+        <h3 style="text-align:start;margin-block:var(--space-6) var(--space-3)">3. The Deniers</h3>
+        <p>A surprising number of organizations — particularly in financial services and professional services — denied that the labor market had fundamentally changed. Rigid return-to-office mandates, outdated compensation structures, and a lack of visible career paths created a talent vacuum that competitors gladly filled.</p>
+
+        <h2>What This Means for Your Hiring Strategy</h2>
+
+        <p>The practical implication is clear: competing on salary alone is a losing game. The most effective hiring organizations we work with today treat recruiting as a brand discipline — one that requires the same rigor as consumer marketing.</p>
+
+        <p>Before your next hire, ask these questions:</p>
+
+        <ul style="margin-block:var(--space-5) var(--space-5);padding-inline-start:var(--space-6)">
+          <li style="margin-block-end:var(--space-3);color:var(--color-text-muted);line-height:1.65">Can your best employees articulate in two sentences why they work here — and would a candidate believe them?</li>
+          <li style="margin-block-end:var(--space-3);color:var(--color-text-muted);line-height:1.65">Does your growth path for this role extend beyond the job description you're posting?</li>
+          <li style="margin-block-end:var(--space-3);color:var(--color-text-muted);line-height:1.65">Is your hiring process treating candidates like customers — or like applicants?</li>
+        </ul>
+
+        <p>The war for talent is over. The companies that won understood something fundamental: great people don't want to win a bidding war. They want to do meaningful work in an environment that respects their time, intelligence, and ambitions.</p>
+
+        <p>Build that environment, and you'll never have to fight that war again.</p>
+
+        <hr class="divider" style="margin-block:var(--space-12)" />
+
+        <!-- Author -->
+        <div style="display:flex;align-items:center;gap:var(--space-5);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius);padding:var(--space-6)">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&auto=format&fit=crop&q=70" alt="Alexandra Reid" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid var(--color-border-gold)" loading="lazy" />
+          <div style="text-align:start">
+            <p style="font-family:var(--font-heading);font-size:1.2rem;font-weight:520;color:var(--color-text);margin-block-end:var(--space-1)">Alexandra Reid</p>
+            <p style="font-size:var(--size-caption);color:var(--color-secondary);margin-block-end:var(--space-2)">CEO & Co-Founder, TalentForge</p>
+            <p style="font-size:var(--size-label);color:var(--color-text-muted)">Alexandra has 20 years in executive search and has advised 300+ companies on talent strategy. She writes weekly on hiring, leadership, and the future of work.</p>
+          </div>
+        </div>
+
+        <!-- Related posts -->
+        <div style="margin-block-start:var(--space-12)">
+          <h3 style="font-size:1.5rem;font-weight:520;text-align:start;margin-block-end:var(--space-6)">Related Articles</h3>
+          <div class="blog-grid" style="grid-template-columns:repeat(2,1fr)">
+            <a href="blog-single.html" class="blog-card" style="text-decoration:none" aria-label="Related article 1">
+              <div class="blog-card-img-wrap"><img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&auto=format&fit=crop&q=70" alt="" class="blog-card-img" loading="lazy" /></div>
               <div class="blog-card-body"><span class="tag">Market Trends</span><h4 class="blog-card-title">How AI Is Changing Executive Search in 2026</h4><p class="blog-card-excerpt">AI won't replace recruiters — but recruiters using AI will replace those who don't.</p></div>
             </a>
             <a href="blog-single.html" class="blog-card" style="text-decoration:none" aria-label="Related article 2">
@@ -165,12 +307,57 @@
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-grid">
-        <div class="footer-brand"><a href="index.html" class="nav-logo"><div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><span class="nav-logo-text" style="color:#F7F5F0">Talent<span>Forge</span></span></a><p>Your hiring success is our only mission.</p></div>
-        <div class="footer-col"><p class="footer-col-title">Services</p><ul class="footer-links"><li><a href="services.html" class="footer-link">Executive Search</a></li><li><a href="services.html" class="footer-link">Staffing</a></li></ul></div>
-        <div class="footer-col"><p class="footer-col-title">Company</p><ul class="footer-links"><li><a href="about.html" class="footer-link">About Us</a></li><li><a href="blog.html" class="footer-link">Blog</a></li><li><a href="contact.html" class="footer-link">Contact</a></li></ul></div>
-        <div class="footer-col"><p class="footer-col-title">Contact</p><ul class="footer-links"><li><a href="mailto:hello@talentforge.com" class="footer-link">hello@talentforge.com</a></li></ul></div>
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="TalentForge">
+            <div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <span class="nav-logo-text">Talent<span>Forge</span></span>
+          </a>
+          <p>Connecting exceptional talent with industry-leading companies since 2006. Your hiring success is our only mission.</p>
+          <div class="footer-social" aria-label="Social media">
+            <a href="#" class="footer-social-link" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" class="footer-social-link" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Services</p>
+          <ul class="footer-links">
+            <li><a href="services.html" class="footer-link">Executive Search</a></li>
+            <li><a href="services.html" class="footer-link">Tech Recruitment</a></li>
+            <li><a href="services.html" class="footer-link">Staffing Solutions</a></li>
+            <li><a href="services.html" class="footer-link">HR Consulting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Company</p>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="coming-soon.html" class="footer-link">Press Kit</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Newsletter</p>
+          <p style="font-size:var(--size-label);color:var(--color-text-muted);margin-block-end:var(--space-4)">Weekly talent market insights directly to your inbox.</p>
+          <form class="footer-newsletter newsletter-form" aria-label="Newsletter signup">
+            <input type="email" class="form-input" placeholder="Your email" aria-label="Newsletter email" id="footer-email-bsg" required />
+            <button type="submit" class="btn btn-primary btn-sm">Go</button>
+          </form>
+        </div>
       </div>
-      <div class="footer-bottom"><p class="footer-copy">© 2026 TalentForge. All rights reserved.</p><nav class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></nav></div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 TalentForge. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </nav>
+        <button type="button" class="back-to-top-btn" aria-label="Back to top">
+          <span>Back to top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+      </div>
     </div>
   </footer>
 

@@ -118,8 +118,8 @@
 
 /* ── Timeline RTL ───────────────────────────────────────── */
 [dir="rtl"] .timeline::before {
-  inset-inline-start: auto;
-  inset-inline-end: 50%;
+  left: 50%;
+  right: auto;
 }
 
 /* ── Hero2 RTL ──────────────────────────────────────────── */
