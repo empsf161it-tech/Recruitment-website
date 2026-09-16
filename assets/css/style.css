@@ -4934,7 +4934,8 @@ p {
   min-height: 100vh;
 }
 
-.dash-sidebar {
+.dash-sidebar,
+[data-theme="light"] .dash-sidebar {
   background: #FFFFFF;
   border-inline-end: 1px solid var(--color-border);
   display: flex;
@@ -4976,29 +4977,31 @@ p {
   border-radius: var(--radius-sm);
   font-size: var(--size-label);
   font-weight: 500;
-  color: #334155;
+  color: #475569;
   transition: var(--transition);
   text-decoration: none;
 }
 
 .dash-nav-item svg {
-  stroke: currentColor;
-  opacity: 0.85;
-  transition: var(--transition);
+  stroke: #64748B;
+  transition: stroke 0.2s ease;
 }
 
 [data-theme="dark"] .dash-nav-item {
   color: rgba(232, 238, 246, 0.85);
 }
 
+[data-theme="dark"] .dash-nav-item svg {
+  stroke: rgba(232, 238, 246, 0.85);
+}
+
 .dash-nav-item:hover {
   background: rgba(201,168,76,0.12);
-  color: #0F172A;
+  color: #0A1628;
 }
 
 .dash-nav-item:hover svg {
-  opacity: 1;
-  stroke: #0F172A;
+  stroke: #0A1628;
 }
 
 [data-theme="dark"] .dash-nav-item:hover {
@@ -5018,7 +5021,6 @@ p {
 
 .dash-nav-item.active svg {
   stroke: #8C6A1A;
-  opacity: 1;
 }
 
 [data-theme="dark"] .dash-nav-item.active {
@@ -5028,7 +5030,6 @@ p {
 
 [data-theme="dark"] .dash-nav-item.active svg {
   stroke: var(--color-secondary);
-  opacity: 1;
 }
 
 .dash-badge {
@@ -5076,7 +5077,7 @@ p {
 .dash-footer-btn {
   width: 44px;
   height: 44px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   border: 1px solid var(--color-border);
   background: var(--color-surface-2);
   color: var(--color-text-muted);
@@ -5087,6 +5088,13 @@ p {
   transition: var(--transition);
   text-decoration: none;
   padding: 0;
+}
+
+.dash-footer-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  transition: stroke 0.2s ease;
 }
 
 [data-theme="dark"] .dash-footer-btn {
@@ -5406,9 +5414,9 @@ p {
    ════════════════════════════════════════════════════════ */
 @media (max-width: 1024px) {
   /* Layout Grids */
-  .grid-4 { grid-template-columns: repeat(2, 1fr) !important; gap: var(--space-6); }
-  .grid-3 { grid-template-columns: repeat(2, 1fr) !important; gap: var(--space-6); }
-  .grid-2 { grid-template-columns: repeat(2, 1fr) !important; gap: var(--space-6); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
   .hero2 { grid-template-columns: 1fr; }
   .hero2-right { display: none; }
   .hero2-left { padding: var(--space-12) var(--space-6); text-align: center; align-items: center; }
@@ -5579,7 +5587,21 @@ p {
 }
 
 @media (max-width: 768px) {
-  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr !important; gap: var(--space-6) !important; }
+  .grid-4, .grid-3, .grid-2, .services-grid, .jobs-grid, .cta-cards, .values-grid, .team-grid, .industries-grid, .services-detail-grid, .process-steps, .blog-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-6) !important;
+    width: 100% !important;
+  }
+  .card, .service-card, .job-card, .cta-card, .value-card, .team-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .jobs-filter {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: var(--space-2) !important;
+  }
   .stats-bar-inner { grid-template-columns: 1fr 1fr; }
   .how-it-works-steps { grid-template-columns: 1fr; }
   .industries-grid { grid-template-columns: 1fr 1fr; }
@@ -5637,6 +5659,30 @@ p {
     width: 100%;
     justify-content: center;
   }
+}
+
+@media (max-width: 480px) {
+  .hero-stats {
+    grid-template-columns: 1fr !important;
+  }
+  .job-card-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .job-card-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-3);
+  }
+  .job-card-bottom .btn {
+    width: 100%;
+  }
+  .industries-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
+  .countdown-sep { display: none; }
+  .dash-body { padding: var(--space-4); }
 }
 
 @media (max-width: 360px) {
