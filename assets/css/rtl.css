@@ -186,4 +186,29 @@
   [dir="rtl"] .job-meta {
     justify-content: center;
   }
+
+  [dir="rtl"] .about-content {
+    align-items: center !important;
+    text-align: center !important;
+    margin-inline: auto !important;
+  }
+
+  [dir="rtl"] .about-content .btn,
+  [dir="rtl"] #learn-more-btn,
+  [dir="rtl"] #about-contact-btn {
+    align-self: center !important;
+    margin-inline: auto !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  [dir="rtl"] .blog-card-body {
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  [dir="rtl"] .blog-card-body .blog-card-title,
+  [dir="rtl"] .blog-card-body .blog-card-excerpt {
+    text-align: center !important;
+  }
 }

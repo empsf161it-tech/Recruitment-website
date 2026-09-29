@@ -447,7 +447,8 @@ const Carousel = {
 
   go(index) {
     this.current = ((index % this.total) + this.total) % this.total;
-    this.track.style.transform = `translateX(-${this.current * 100}%)`;
+    const translatePercent = (this.current * 100) / this.total;
+    this.track.style.transform = `translateX(-${translatePercent}%)`;
     this.updateDots();
   },
 
